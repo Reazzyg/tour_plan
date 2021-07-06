@@ -1,11 +1,10 @@
 .header
-  background-color: #fff
+  background-color: $white
   &-top
     display: flex
     align-items: center
     justify-content: space-between
-    padding-top: 40px
-    padding-bottom: 40px
+    padding: 40px 0
   &__search
     margin-right: auto
     margin-left: 108px
@@ -24,8 +23,9 @@
     background-color: #f5fafe
     border: none
     font-size: 12px
-    line-height: 15
+    line-height: 15px
     color: $text-color
+    outline: none
 
   &__button
     position: absolute
@@ -34,7 +34,9 @@
     width: 65px
     height: 100%
     border: none
+    cursor: pointer
     background-color: $primary
+    outline: none
 .user
   display: flex
   align-items: center
@@ -47,5 +49,5 @@
   &__name
     margin-left: 18px
     font-size: 14px
-    line-height: 18
+    line-height: 18px
     color: $text-color
