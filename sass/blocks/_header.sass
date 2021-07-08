@@ -1,19 +1,30 @@
-.header
+.navbar
   background-color: $white
   &-top
     display: flex
     align-items: center
     justify-content: space-between
     padding: 40px 0
-  &__search
-    margin-right: auto
-    margin-left: 108px
+    &__search
+      margin-right: auto
+      margin-left: 108px
 .search
   display: flex
   position: relative
   overflow: hidden
   border-radius: 6px
   height: 40px
+  &-menu
+    list-style: none
+    margin: 0
+    padding: 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    background-color: $dark
+    color: $white
+    &__link
+
   &__input
     height: 100%
     width: 350px
