@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tour-plan</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
@@ -123,9 +124,43 @@
           </div>
           <!-- /.hotel-info__right -->
         </div>
+        <!-- /.hotel-info -->
+        <div class="hotel-gird">
+          <div class="slider">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="img/slide.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slide2.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slide3.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slide6.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slide5.jpg" alt="" />
+                </div>
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <button class="slider-button slider-button__prev"></button>
+              <button class="slider-button slider-button__next"></button>
+            </div>
+            <!-- swiper-container -->
+          </div>
+        </div>
       </div>
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
