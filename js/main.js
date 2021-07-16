@@ -1,32 +1,47 @@
-const swiper = new Swiper('.swiper-container', {
+const hotelSlisder = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button__next',
-    prevEl: '.slider-button__prev',
+    nextEl: '.hotel-slider__button--next',
+    prevEl: '.hotel-slider__button--prev',
   },
    keyboard: {
     enabled: true,
     onlyInViewport: false,
   },
 });
-// Функция ymaps.ready() будет вызвана, когда
-    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+
     ymaps.ready(init);
-    function init(){
-        // Создание карты.
-        var myMap = new ymaps.Map(document.querySelector('.map'), {
-            // Координаты центра карты.
-            // Порядок по умолчанию: «широта, долгота».
-            // Чтобы не определять координаты центра карты вручную,
-            // воспользуйтесь инструментом Определение координат.
+
+function init() {
+    var myMap = new ymaps.Map(document.querySelector('.map'), {
             center: [7.890761189391702,98.29469223370225],
-            // Уровень масштабирования. Допустимые значения:
-            // от 0 (весь мир) до 19.
             zoom: 17,
             controls: ['smallMapDefaultSet']
-            }, {
-        searchControlProvider: 'yandex#search'
-    });
-    }
+        }, {
+            searchControlProvider: 'yandex#search'
+        });
+
+    
+    myMap.geoObjects
+                .add(new ymaps.Placemark([7.890761189391702,98.29469223370225], {
+            balloonContent: 'Grand Hilton Hotel'
+        }, {
+            preset: 'islands#icon',
+            iconColor: '#0095b6'
+        }))
+}
+   
+  
+
+    const reviewsSlider = new Swiper('.reviews-slider', {
+  // Optional parameters
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews-slider__button--next',
+    prevEl: '.reviews-slider__button--prev',
+  },
+
+});
