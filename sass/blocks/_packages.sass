@@ -39,13 +39,7 @@
       font-weight: 600
       font-size: 12px
       line-height: 15px
-  &__info-offering
-    font-family: Mulish
-    font-style: normal
-    font-weight: normal
-    font-size: 12px
-    line-height: 15px
-    margin-top: 34px
+
   &-large
     padding: 46px 21px 30px 43px
     position: relative
@@ -58,43 +52,50 @@
       font-weight: bold
       font-size: 18px
       line-height: 23px
-    &__text
+    &__description
       font-family: Mulish
       font-style: normal
       font-weight: normal
       font-size: 14px
       line-height: 160.6%
+    &__info
+      font-family: Mulish
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      margin-top: 34px
+    &__ul
+      padding: 0
+      margin: 0
+      list-style: none
+    &__item
+      text-decoration: none
+      color: inherit
+      font-family: Mulish
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      margin-bottom: 11px
+    &__icon
+      width: 14px
+      height: 14px
+      margin-right: 14px
+    &__cost-old
+      font-family: Mulish
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+      text-decoration-line: line-through
+    &__cost-new
+      font-family: Mulish
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
 
-  &__ul
-    padding: 0
-    margin: 0
-    list-style: none
-  &__item
-    text-decoration: none
-    color: inherit
-    font-family: Mulish
-    font-style: normal
-    font-weight: normal
-    font-size: 12px
-    line-height: 15px
-    margin-bottom: 11px
-  &__icon
-    width: 14px
-    height: 14px
-    margin-right: 14px
-  &__cost-old
-    font-family: Mulish
-    font-style: normal
-    font-weight: normal
-    font-size: 14px
-    line-height: 18px
-    text-decoration-line: line-through
-  &__cost-new
-    font-family: Mulish
-    font-style: normal
-    font-weight: bold
-    font-size: 24px
-    line-height: 30px
   &-offer
     position: relative
     display: flex
@@ -131,24 +132,25 @@
       font-weight: bold
       font-size: 18px
       line-height: 23px
+    &__price-old
+      font-family: Mulish
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+      text-decoration-line: line-through
+    &__price-new
+      font-family: Mulish
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
   &__image
     width: 350px
     max-height: 250px
     object-fit: cover
-  &__price-old
-    font-family: Mulish
-    font-style: normal
-    font-weight: normal
-    font-size: 14px
-    line-height: 18px
-    text-decoration-line: line-through
-  &__price-new
-    font-family: Mulish
-    font-style: normal
-    font-weight: bold
-    font-size: 24px
-    line-height: 30px
-  &__button
+
+  &-button
     position: absolute
     right: 21px
     bottom: 30px

@@ -455,15 +455,6 @@ img {
   line-height: 15px;
 }
 
-.packages__info-offering {
-  font-family: Mulish;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  margin-top: 34px;
-}
-
 .packages-large {
   padding: 46px 21px 30px 43px;
   position: relative;
@@ -480,7 +471,7 @@ img {
   line-height: 23px;
 }
 
-.packages-large__text {
+.packages-large__description {
   font-family: Mulish;
   font-style: normal;
   font-weight: normal;
@@ -488,13 +479,22 @@ img {
   line-height: 160.6%;
 }
 
-.packages__ul {
+.packages-large__info {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 34px;
+}
+
+.packages-large__ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.packages__item {
+.packages-large__item {
   text-decoration: none;
   color: inherit;
   font-family: Mulish;
@@ -505,13 +505,13 @@ img {
   margin-bottom: 11px;
 }
 
-.packages__icon {
+.packages-large__icon {
   width: 14px;
   height: 14px;
   margin-right: 14px;
 }
 
-.packages__cost-old {
+.packages-large__cost-old {
   font-family: Mulish;
   font-style: normal;
   font-weight: normal;
@@ -520,7 +520,7 @@ img {
   text-decoration-line: line-through;
 }
 
-.packages__cost-new {
+.packages-large__cost-new {
   font-family: Mulish;
   font-style: normal;
   font-weight: bold;
@@ -572,13 +572,7 @@ img {
   line-height: 23px;
 }
 
-.packages__image {
-  width: 350px;
-  max-height: 250px;
-  object-fit: cover;
-}
-
-.packages__price-old {
+.packages-description__price-old {
   font-family: Mulish;
   font-style: normal;
   font-weight: normal;
@@ -587,7 +581,7 @@ img {
   text-decoration-line: line-through;
 }
 
-.packages__price-new {
+.packages-description__price-new {
   font-family: Mulish;
   font-style: normal;
   font-weight: bold;
@@ -595,7 +589,13 @@ img {
   line-height: 30px;
 }
 
-.packages__button {
+.packages__image {
+  width: 350px;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.packages-button {
   position: absolute;
   right: 21px;
   bottom: 30px;
