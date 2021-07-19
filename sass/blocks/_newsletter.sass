@@ -1,20 +1,7 @@
 .newsletter
   position: relative
   padding: 90px 0 87px 0
-  background-image: url(../img/newsletter-bg.jpg)
-  background-repeat: no-repert
-  background-size: cover
-  background-position: center
-  &::before
-    content: ''
-    position: absolute
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    width: 100%
-    height: 100%
-    background-color: rgba($dark, 0.8)
+
   &-wrapper
     position: relative
     max-width: 731px
@@ -35,6 +22,25 @@
       font-size: 36px
       line-height: 45px
       text-transform: uppercase
+.parallax-window
+  z-index: 10
+  position: relative
+  overflow: hidden
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($dark, 0.8)
+  &__item
+    background-image: url(../img/newsletter-bg.jpg)
+    position: absolute
+    background-repeat: no-repeat
+    background-size: cover
 .subscribe
   position: relative
   width: 350px
