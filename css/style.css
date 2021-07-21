@@ -61,6 +61,10 @@ img {
   line-height: 18px;
 }
 
+.navbar-menu__item_mobile_visible {
+  display: none;
+}
+
 .logo {
   width: 177px;
 }
@@ -117,6 +121,14 @@ img {
   font-size: 14px;
   line-height: 18px;
   color: #333;
+}
+
+.navbar__user_mobile_hidden, .navbar__search_mobile_hidden {
+  display: flex;
+}
+
+.navbar__user_mobile_visible, .navbar__search_mobile_visible {
+  display: none;
 }
 
 .breadcrumb-list {
@@ -445,7 +457,7 @@ img {
   left: 0;
   top: 26px;
   padding: 8px 12px;
-  z-index: 99;
+  z-index: 98;
   color: #fff;
   background-color: #EC1F46;
   border-radius: 0px 4px 4px 0px;
@@ -1034,6 +1046,17 @@ img {
 
 .footer__item--mb-2 {
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__item--link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__item--tel {
+  flex-basis: 100%;
 }
 
 .footer__icon-wrapper {
@@ -1540,6 +1563,7 @@ template {
   }
   .navbar__search {
     margin-left: auto;
+    margin-right: 73px;
   }
   .navbar-menu {
     padding: 22px 0;
@@ -1660,11 +1684,55 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .navbar .search, .navbar-menu, .navbar__user {
+  body {
+    padding-top: 80px;
+  }
+  .navbar_mobile_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar__user_mobile_hidden, .navbar__search_mobile_hidden {
     display: none;
+  }
+  .navbar__user_mobile_visible, .navbar__search_mobile_visible {
+    display: flex;
+  }
+  .navbar__user {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navbar__search_mobile_visible {
+    margin: 0;
   }
   .navbar-top {
     padding: 28px 0;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 74px;
+    padding-top: 30px;
+  }
+  .navbar-bottom_visible {
+    display: block;
+  }
+  .navbar-menu {
+    flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item_mobile_visible {
+    display: block;
+  }
+  .search__input_mobile {
+    width: 280px;
   }
   .menu-button {
     display: flex;
@@ -1682,6 +1750,11 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333;
+  }
+  .user__name_light {
+    color: #fff;
+    margin-left: 0;
+    margin-top: 10px;
   }
   .stars {
     flex-basis: auto;

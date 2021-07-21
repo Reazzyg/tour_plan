@@ -33,8 +33,6 @@ function init() {
         }))
 }
    
-  
-
     const reviewsSlider = new Swiper('.reviews-slider', {
   // Optional parameters
   loop: true,
@@ -49,4 +47,9 @@ function init() {
 $('.parallax-window').parallax({
   imageSrc: 'img/newsletter-bg.jpg',
   speed: 0.6,
+});
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener('click', function() {
+document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom_visible");
 });
