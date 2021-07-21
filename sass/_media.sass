@@ -9,6 +9,25 @@
         height: 100%
         object-fit: cover
         width: 100%
+  .packages
+    &-wrapper
+      grid-template-columns: repeat(3, 300px)
+    &-offering
+      width: 630px
+    &__image-first
+      width: 315px
+    &-offer
+      width: 300px
+    &-description
+      width: 300px
+    &-large
+      &__description
+        font-size: 11px
+      &__cost
+        margin: 0
+      &__button
+        width: 201px
+
   .reviews
     &__title
       font-style: normal
@@ -20,6 +39,13 @@
   .card
     width: 230px
     height: 230px
+  .footer
+    &__input
+      flex-basis: 100%
+    &-policy
+      &__ul
+        right: 315px
+
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -52,6 +78,32 @@
     width: 340px
   .map
     width: 340px
+  .packages
+    &-wrapper
+      grid-template-columns: 370px 370px
+      grid-gap: 20px
+    &-offering
+      width: 760px
+    &__image-first
+      width: 375px
+    &-large
+      &__button
+        width: 130px
+        position: absolute
+        right: 21px
+        bottom: 30px
+        padding: 10px 26px
+        background-color: $primary
+        color: $white
+        border: none
+        border-radius: 4px
+        cursor: pointer
+    &-offer
+      width: 370px
+    &__image
+      width: 370px
+    &-description
+      width: 370px
 
   .reviews
     &-slider
@@ -65,6 +117,39 @@
   .card
     width: 340px
     height: 230px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 49%
+    &__logo
+      grid-row: 1/2
+      grid-column: span 2
+
+    &__social
+      &-network
+        grid-row: 1/2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2/3
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__aditional
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-row: 3
+        grid-column: span 5
+      &-form
+        grid-column: span 5
+        grid-row: 4
+    &-policy
+      grid-column: span 6
+      &__ul
+        left: 0
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -119,6 +204,19 @@
     width: 100%
   .map
     width: 100%
+  .packages
+    &-wrapper
+      grid-template-columns: 288px 288px
+      grid-gap: 10px
+    &__image-first
+      width: 288px
+    &-offering
+      width: 576px
+    &-offer
+      width: 281px
+    &-description
+      width: 281px
+
   .newsletter
     &-wrapper
       max-width: 576px
@@ -149,6 +247,12 @@
   .card
     width: 49%
     height: 255px
+  .footer
+    &__input
+      flex-basis: 100%
+    &-policy
+      &__ul
+        right: 0
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -158,6 +262,14 @@
       margin-bottom: 20px
     &-slider
       height: 250px
+  .packages
+    padding-top: 20px
+    &-wrapper
+      grid-template-columns: 1fr
+      justify-items: center
+    &-offering
+      display: none
+
   .newsletter
     padding: 76px 0 83px 0
     &__title
@@ -165,6 +277,7 @@
   .subscribe
     width: 100%
   .reviews
+    padding: 20px 0 50px 0
     &__title
       font-style: normal
       font-weight: bold
@@ -172,5 +285,64 @@
       line-height: 23px
       text-align: center
       text-transform: uppercase
+      margin-top: 0
+      margin-bottom: 42px
   .card
     width: 100%
+  .activities
+    &__title
+      margin-bottom: 36px
+  .footer
+    padding-top: 40px
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-row-gap: 30px
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+        flex-wrap: wrap
+
+    &__title--inline
+      flex-basis: 100%
+      margin-bottom: 20px
+
+    &__aditional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+
+      &-details
+        max-width: 90%
+        grid-row: 6
+        grid-column: 1
+      &-form
+        position: relative
+        grid-row: 7
+        grid-column: 1
+    &__message
+      margin-bottom: 15px
+      wrap: soft
+    &__button
+      margin-bottom: 0
+      margin-top: 30px
+    &__info
+      position: absolute
+      left: 0
+      bottom: 65px
+    &-policy
+      grid-row: 8
+      grid-column: 1
+      flex-wrap: wrap
+      &__pay
+        left: 0
+        top: 15px
