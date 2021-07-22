@@ -1735,21 +1735,52 @@ template {
     width: 280px;
   }
   .menu-button {
-    display: flex;
+    display: block;
+    position: relative;
     width: 16px;
-    height: 11px;
+    height: 16px;
     padding: 0;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
     border: none;
     background-color: #fff;
     cursor: pointer;
   }
   .menu-button__line {
+    position: absolute;
+    display: block;
     width: 16px;
     height: 1px;
     background-color: #333;
+  }
+  .menu-button__line::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 16px;
+    height: 1px;
+    background-color: #333;
+    transform: translateY(6px);
+  }
+  .menu-button__line::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 16px;
+    height: 1px;
+    background-color: #333;
+    transform: translateY(-6px);
+  }
+  .menu-button__line--active {
+    height: 0;
+  }
+  .menu-button__line--active::before {
+    height: 1px;
+    transform: rotate(45deg);
+    transition: 0.2s;
+  }
+  .menu-button__line--active::after {
+    height: 1px;
+    transform: rotate(-45deg);
+    transition: 0.2s;
   }
   .user__name_light {
     color: #fff;

@@ -203,20 +203,46 @@
         width: 280px
   .menu
     &-button
-      display: flex
+      display: block
+      position: relative
       width: 16px
-      height: 11px
+      height: 16px
       padding: 0
-      align-items: center
-      justify-content: space-between
-      flex-direction: column
       border: none
       background-color: $white
       cursor: pointer
       &__line
+        position: absolute
+        display: block
         width: 16px
         height: 1px
         background-color: $text-color
+      &__line::before
+        content: ''
+        position: absolute
+        left: 0
+        width: 16px
+        height: 1px
+        background-color: $text-color
+        transform: translateY(6px)
+      &__line::after
+        content: ''
+        position: absolute
+        left: 0
+        width: 16px
+        height: 1px
+        background-color: $text-color
+        transform: translateY(-6px)
+      &__line--active
+        height: 0
+      &__line--active::before
+        height: 1px
+        transform: rotate(45deg)
+        transition: 0.2s
+      &__line--active::after
+        height: 1px
+        transform: rotate(-45deg)
+        transition: 0.2s
   .user
     &__name
       &_light

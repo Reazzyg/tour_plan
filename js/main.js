@@ -52,4 +52,7 @@ $('.parallax-window').parallax({
 var menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener('click', function() {
 document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom_visible");
+document.querySelector(".menu-button__line").classList.toggle("menu-button__line--active")
+
 });
+
