@@ -66,7 +66,7 @@ $email = $_POST['newsletter'];
 // Формирование самого письма
 $title = "Новая заявка на рассылку Best Tour Plan";
 $body = "
-<h2>Новое заявкка</h2>
+<h2>Новое заявка</h2>
 <b>E-mail:</b> $email<br>
 
 ";
