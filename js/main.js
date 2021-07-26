@@ -85,4 +85,12 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
   }
+  $(document).on('keydown', function (e) {
+    if (e.keyCode == 27) {
+      var modalOverlay = $('.modal__overlay');
+      var modalDialog = $('.modal__dialog');
+      modalOverlay.removeClass('modal__overlay--visible');
+      modalDialog.removeClass('modal__dialog--visible');
+    }
+  });
 });
