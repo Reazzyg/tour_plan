@@ -1824,7 +1824,7 @@ template {
     width: 100%;
   }
   .packages-wrapper {
-    grid-template-columns: 288px 288px;
+    grid-template-columns: 0.5fr 0.5fr;
     grid-gap: 10px;
   }
   .packages__image-first {
