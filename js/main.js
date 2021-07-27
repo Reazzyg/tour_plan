@@ -85,8 +85,8 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
   }
-  $('.modal__input--phone').mask('+7 (000) 000-00-00');
-  $('.footer__input--phone').mask('+7 (000) 000-00-00');
+  $('.modal__input-phone').mask('+7 (000) 000-00-00');
+  $('.footer__input-phone').mask('+7 (000) 000-00-00');
   //Обработка форм валидации
   $('.form').each(function () {
     $(this).validate({
