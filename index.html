@@ -534,10 +534,10 @@
           <form
             action="send.php"
             method="POST"
-            class="subscribe newsletter__subscribe"
+            class="subscribe newsletter__subscribe form"
           >
             <input
-              type="text"
+              type="email"
               class="subscribe__input"
               placeholder="Your email address"
               required
@@ -890,22 +890,25 @@ quest"
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                required
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                required
-                placeholder="Phone Number*"
-                name="phone"
-              />
-
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  required
+                  placeholder="Your Full Name*"
+                  name="name"
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input--phone"
+                  required
+                  placeholder="Phone Number*"
+                  name="phone"
+                />
+              </div>
               <textarea
                 class="message footer__message"
                 placeholder="Message"
@@ -951,32 +954,33 @@ quest"
           <img src="img/close.svg" alt="Icon: close"
         /></a>
         <h3 class="modal__title">Send us a message</h3>
-        <form action="send.php" method="POST" class="modal__form">
+        <form action="send.php" method="POST" class="modal__form form">
           <input
             type="text"
             class="input modal__input"
             required
             placeholder="Your Full Name*"
-            name="message-name"
+            name="messageName"
+            minlength="2"
           />
           <input
-            type="text"
-            class="input modal__input"
+            type="tel"
+            class="input modal__input--phone"
             required
             placeholder="Phone Number*"
-            name="message-phone"
+            name="messagePhone"
           />
           <input
-            type="text"
+            type="email"
             class="input modal__input"
             required
             placeholder="Email*"
-            name="message-email"
+            name="messageEmail"
           />
           <textarea
             class="message modal__message"
             placeholder="Message"
-            name="message-text"
+            name="messageText"
             cols="1"
             rows="10"
           ></textarea>
@@ -987,11 +991,14 @@ quest"
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=55d2d308-6f6d-4b32-8106-803a257478fe&lang=ru_RU"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

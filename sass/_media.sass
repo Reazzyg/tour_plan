@@ -41,7 +41,10 @@
     height: 230px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
+      &--phone
+        flex-basis: 100%
     &-policy
       &__ul
         right: 315px
@@ -123,7 +126,10 @@
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
     &__input
-      flex-basis: 49%
+      &-group
+        flex-basis: 49%
+      &--phone
+        flex-basis: 49%
     &__logo
       grid-row: 1/2
       grid-column: span 2
@@ -280,16 +286,21 @@
     width: 100%
   .packages
     &-wrapper
-      grid-template-columns: 0.5fr 0.5fr
+      grid-template: repeat(5, 500px)/1fr
       grid-gap: 10px
+    &__image
+      width: 100%
     &__image-first
       width: 288px
     &-offering
-      width: 576px
+      width: 100%
+      grid-column: 1
     &-offer
-      width: 281px
+      width: 100%
     &-description
-      width: 281px
+      width: 100%
+    &__title
+      font-size: 30px
 
   .newsletter
     &-wrapper
@@ -323,26 +334,45 @@
     height: 255px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
+      &--phone
+        flex-basis: 100%
     &-policy
       &__ul
         right: 0
 @media (max-width: 576px)
   .logo
     width: 99px
-
   .hotel
+    padding-bottom: 40px
     &__slider
       margin-bottom: 20px
     &-slider
       height: 250px
   .packages
-    padding-top: 20px
+    padding-top: 0px
     &-wrapper
       grid-template-columns: 1fr
       justify-items: center
+    &__title
+      margin-bottom: 42px
+    &__image-first
+      height: 250px
+      width: 100%
     &-offering
-      display: none
+      display: flex
+      flex-direction: column
+    &-large
+      padding: 30px 21px 35px 32px
+      border-bottom-left-radius: 8px
+      border-bottom-right-radius: 8px
+      &__stars
+        display: none
+      &__description
+        display: none
+    &__title
+      font-size: 18px
 
   .newsletter
     padding: 76px 0 83px 0

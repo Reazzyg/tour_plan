@@ -85,12 +85,35 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
   }
-  $(document).on('keydown', function (e) {
-    if (e.keyCode == 27) {
-      var modalOverlay = $('.modal__overlay');
-      var modalDialog = $('.modal__dialog');
-      modalOverlay.removeClass('modal__overlay--visible');
-      modalDialog.removeClass('modal__dialog--visible');
-    }
+  $('.modal__input--phone').mask('+7 (000) 000-00-00');
+  $('.footer__input--phone').mask('+7 (000) 000-00-00');
+  //Обработка форм валидации
+  $('.form').each(function () {
+    $(this).validate({
+      errorClass: 'invalid',
+
+      messages: {
+        messageName: {
+          required: 'Please specify your name',
+          minlength: 'Name must be at least 2 symbols',
+        },
+        name: {
+          required: 'Please specify your name',
+        },
+        phone: {
+          required: 'Please specify your phone number',
+        },
+        messageEmail: {
+          required: 'We need your email address to contact you',
+          email: 'Your email address must be in the format of name@domain.com',
+        },
+        messagePhone: {
+          required: 'Please specify your phone number',
+        },
+        newsletter: {
+          required: 'We need your email address to contact you',
+        },
+      },
+    });
   });
 });
