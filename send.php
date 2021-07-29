@@ -56,7 +56,7 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('location: thankyou.html')
+header('location: thankyou.html');
             }
             else if (isset($_POST['newsletter'])) {
                 // Переменные, которые отправляет пользователь
@@ -108,5 +108,5 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('location: thankyounews.html')
+header('location: thankyounews.html');
             }

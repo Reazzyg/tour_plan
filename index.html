@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/aos.css" />
   </head>
   <body>
     <header class="navbar navbar_mobile_fixed">
@@ -240,10 +241,14 @@
       <div class="container">
         <h2 class="packages__title">Other Packages</h2>
         <div class="packages-wrapper">
-          <div class="packages-offering">
+          <div
+            class="packages-offering"
+            data-aos="flip-left"
+            data-aos-delay="100"
+          >
             <span class="packages-offering__flash">Flash Offer</span>
             <img
-              src="img/packages-image-1.png"
+              src="img/packages-image-1.jpg"
               alt=""
               class="packages__image-first"
             />
@@ -307,7 +312,7 @@
           </div>
           <!-- /.offering -->
 
-          <div class="packages-offer">
+          <div class="packages-offer" data-aos="flip-left" data-aos-delay="200">
             <span class="packages-offer__flash">Flash Offer</span>
             <img
               src="img/packages-image-2.jpg"
@@ -359,7 +364,7 @@
           </div>
           <!-- /.offer -->
 
-          <div class="packages-offer">
+          <div class="packages-offer" data-aos="flip-left" data-aos-delay="300">
             <span class="packages-offer__flash">Flash Offer</span>
             <img
               src="img/packages-image-3.jpg"
@@ -410,7 +415,7 @@
             <!-- /.packsges__description -->
           </div>
           <!-- /.offer -->
-          <div class="packages-offer">
+          <div class="packages-offer" data-aos="flip-left" data-aos-delay="400">
             <span class="packages-offer__flash">Flash Offer</span>
             <img
               src="img/packages-image-4.jpg"
@@ -461,7 +466,7 @@
             <!-- /.packsges__description -->
           </div>
           <!-- /.offer -->
-          <div class="packages-offer">
+          <div class="packages-offer" data-aos="flip-left" data-aos-delay="500">
             <span class="packages-offer__flash">Flash Offer</span>
             <img
               src="img/packages-image-5.jpg"
@@ -673,9 +678,13 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
-              src="img/activity-1.png"
+              src="img/activity-1.jpg"
               alt="The curious corner of chamarel"
               class="card__image"
             />
@@ -686,9 +695,13 @@
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
-              src="img/activity-2.png"
+              src="img/activity-2.jpg"
               alt="Gymkhana club golf course"
               class="card__image"
             />
@@ -699,9 +712,13 @@
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img
-              src="img/activity-3.png"
+              src="img/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day"
               class="card__image"
             />
@@ -712,9 +729,13 @@
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <img
-              src="img/activity-4.png"
+              src="img/activity-4.jpg"
               alt="The blue marine discovery
 quest"
               class="card__image"
@@ -887,23 +908,31 @@ quest"
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form form">
-              <div class="footer__input-group">
-                <input
-                  type="text"
-                  class="input footer__input"
-                  required
-                  placeholder="Your Full Name*"
-                  name="name"
-                />
-              </div>
-              <div class="footer__input-group">
-                <input
-                  type="tel"
-                  class="input footer__input-phone"
-                  required
-                  placeholder="Phone Number*"
-                  name="phone"
-                />
+              <div class="footer__group">
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    required
+                    placeholder="Your Full Name*"
+                    name="name"
+                    data-aos="fade-left"
+                    data-aos-delay="100"
+                    data-aos-duration="200"
+                  />
+                </div>
+                <div class="footer__input-group">
+                  <input
+                    type="tel"
+                    class="input footer__input-phone"
+                    required
+                    placeholder="Phone Number*"
+                    name="phone"
+                    data-aos="fade-left"
+                    data-aos-delay="400"
+                    data-aos-duration="200"
+                  />
+                </div>
               </div>
               <textarea
                 class="message footer__message"
@@ -911,6 +940,9 @@ quest"
                 name="message"
                 cols="1"
                 rows="10"
+                data-aos="fade-left"
+                data-aos-delay="500"
+                data-aos-duration="200"
               ></textarea>
               <button class="button footer__button" type="submit">Send</button>
               <span class="footer__info">* Required Fields</span>
@@ -995,6 +1027,7 @@ quest"
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
